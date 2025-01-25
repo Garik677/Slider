@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.slider{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.view{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;
+    position: absolute;
+}
+
+.btnBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    z-index: 2;
+}
+
+.btn{
+    width: 50%;
+    height: 100%;
+    background: transparent;
+}
+
+.pagesBox{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page{
+    width: calc(70% / 4 - 10px);
+    height: 10px;
+    background: #e5d8d8;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.value{
+    width: 0;
+    height: 100%;
+    background: white;
+    transition: .1s;
+}
+
+.infoBox{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    translate: -50% 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font: bold 25px verdana;
+    text-shadow: 0px -2.5px 0px white;
+    -webkit-text-stroke: 1px black;
+}
+
+p{
+    font: normal 20px sans-serif;
+    text-shadow: 0px -2px 0px white;
+}
